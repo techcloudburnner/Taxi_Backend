@@ -24,11 +24,12 @@ services:
       - mysql
 
     environment:
-      DB_URL: jdbc:mysql://mysql:3306/taxi_services?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-      DB_USER: root
-      DB_PASSWORD: root1234
-      FRONTEND_URL: http://localhost:3000
-      APP_LOG_LEVEL: INFO
+  DB_URL: jdbc:mysql://mysql:3306/taxi_services?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+  DB_USER: root
+  DB_PASSWORD: root1234
+  FRONTEND_URL: http://localhost:3000
+  APP_LOG_LEVEL: INFO
+  SHOW_SQL: false
 
     ports:
       - "8081:8080"
